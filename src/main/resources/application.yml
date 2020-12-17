@@ -1,0 +1,11 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: 'prometheus, health, metrics'
+server:
+  netty:
+    connection-timeout: 2000
